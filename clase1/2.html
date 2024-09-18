@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de ingreso</h1>
+    <form>
+        NOMBRE:<input type="text" id="nombre"><hr>
+        APELLIDO:<input type="text" id="ape"><br><br>
+        EDAD:<input type="text" id="edad"><br><br>
+        DIRECCION:<input type="text" id="direccion"><br><br>
+        <input type="button" value="Ingresar" onclick="ingresar()">
+        <!--ESTO ES EL MUNDO DE HTML-->
+        <!--hr es para la linea horizontal-->
+    </form>
+    <script>
+        function ingresar(){
+            let nombre=document.getElementById('nombre').value;
+            let apellido=document.getElementById('ape').value;
+            let edad=parseInt(document.getElementById('ape').value);
+            let direccion=document.getElementById('direccion').value;
+            
+            document.write(`Nombre: ${nombre}\nApellido: ${apellido}\nEdad: ${edad}\nDireccion: ${direccion}`)
+        }
+    </script>
+    
+</body>
+</html>
